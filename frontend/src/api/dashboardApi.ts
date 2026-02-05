@@ -10,7 +10,8 @@ import type {
   User,
 } from '../types/dashboard';
 
-const API_BASE_URL = 'http://localhost:5000/api';
+// const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://learningroutestask-x9up-2dn3j64aa-sudhanshu-519b12e7.vercel.app/api';
 
 // Import auth service
 import { 
