@@ -1,14 +1,9 @@
-# dependencies
+# root node_modules
 node_modules/
 
-# environment variables
+# backend node_modules
+Backend/node_modules/
+
+# env files
 .env
-
-# logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# build output (optional)
-dist/
-build/
+Backend/.env

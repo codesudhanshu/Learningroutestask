@@ -1,8 +1,6 @@
 // src/services/authService.ts
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:5000/api';
-
 export const setAuthToken = (token: string): void => {
   console.log('🔐 Setting auth token:', token ? token.substring(0, 20) + '...' : 'null');
   

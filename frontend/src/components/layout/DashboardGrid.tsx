@@ -13,7 +13,7 @@ interface DashboardGridProps {
 }
 
 const DashboardGrid: React.FC<DashboardGridProps> = ({ widgets }) => {
-  const { isEditing, updateWidget, setLayout, removeWidget } = useDashboardStore();
+  const { isEditing, setLayout, removeWidget } = useDashboardStore();
 
   const layout = widgets.map(widget => ({
     i: widget.id,
