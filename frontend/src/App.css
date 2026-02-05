@@ -1,0 +1,132 @@
+.app {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 30px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 15px;
+}
+
+.widget-container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.react-grid-item {
+  transition: all 200ms ease;
+}
+
+.react-grid-item.react-draggable-dragging {
+  transition: none;
+  z-index: 1000;
+}
+
+.toolbar {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+button {
+  padding: 8px 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Widget specific styles */
+.bar-chart-widget,
+.line-chart-widget,
+.treemap-widget,
+.scatter-plot-widget {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bar-chart-widget h3,
+.line-chart-widget h3,
+.treemap-widget h3,
+.scatter-plot-widget h3 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+/* Stats and legend styling */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 8px;
+  background: #f9f9f9;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.stats div {
+  flex: 1;
+  min-width: 120px;
+}
+
+
+/* Toolbar Styles */
+.toolbar {
+  margin-bottom: 20px;
+}
+
+.toolbar button {
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.toolbar button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.toolbar button:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.toolbar button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Widget container hover effect */
+.widget-container:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Tooltip styles */
+.custom-tooltip {
+  background-color: white !important;
+  border: 1px solid #ccc !important;
+  padding: 10px !important;
+  border-radius: 4px !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.custom-tooltip p {
+  margin: 5px 0;
+}
